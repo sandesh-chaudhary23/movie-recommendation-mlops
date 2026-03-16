@@ -26,7 +26,14 @@ def recommend(movie):
     return recommended_movies
 
 
-st.title("Movie Recommendation System")
+st.title("🎬 Movie Recommendation System")
+
+st.write(
+"This is a content-based movie recommendation system built using Machine Learning. "
+"It recommends movies similar to the one selected by the user using cosine similarity."
+)
+
+st.write("Dataset: TMDB Movie Dataset | Deployment: Streamlit Cloud | MLOps: GitHub + Cloud Deployment")
 
 selected_movie = st.selectbox(
 "Select a Movie",
